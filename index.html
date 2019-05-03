@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>shopping Cart</title>
+		<meta name="description" content="">
+		<meta name="author" content="jose_prog">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/main.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h1 id="">Shopping Cart</h1>
+
+			<div>
+				<ul>
+					<li ><a class="add-to-cart" href="#" data-name="Apple" data-price="40">Apple ksh 40</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Pineapple" data-price="150">Pineapple ksh 150</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Watermelon" data-price="40">Watermelon ksh 70</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Strawberry" data-price="40">Strawberry ksh 50</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Kale" data-price="40">Kale ksh 20</a></li>
+				</ul>
+				<button id="clear-cart">Clear Cart</button>
+			</div>
+
+			<div>
+				<ul id="show-cart">
+					<!--  -->
+				</ul>
+
+				<div >Total Cart: Ksh <span id="total-cart"> 50</span></div>
+			</div> 
+		</div>
+
+		<footer class="container-fluid">
+			<p>
+				&copy; Copyright  by jose_prog
+			</p>
+		</footer>
+		
+	</body>
+</html>

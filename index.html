@@ -6,11 +6,12 @@
 		<title>shopping Cart</title>
 		<meta name="description" content="">
 		<meta name="author" content="jose_prog">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<script src="js/jquery.js"></script>
+		<script src="js/cart.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/main.js" ></script>
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	</head>
 
 	<body>
@@ -21,20 +22,29 @@
 				<ul>
 					<li ><a class="add-to-cart" href="#" data-name="Apple" data-price="40">Apple ksh 40</a></li>
 					<li ><a class="add-to-cart" href="#" data-name="Pineapple" data-price="150">Pineapple ksh 150</a></li>
-					<li ><a class="add-to-cart" href="#" data-name="Watermelon" data-price="40">Watermelon ksh 70</a></li>
-					<li ><a class="add-to-cart" href="#" data-name="Strawberry" data-price="40">Strawberry ksh 50</a></li>
-					<li ><a class="add-to-cart" href="#" data-name="Kale" data-price="40">Kale ksh 20</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Watermelon" data-price="140">Watermelon ksh 140</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Strawberry" data-price="80">Strawberry ksh 80</a></li>
+					<li ><a class="add-to-cart" href="#" data-name="Kale" data-price="60">Kale ksh 60</a></li>
 				</ul>
-				<button id="clear-cart">Clear Cart</button>
 			</div>
-
+			<!-- <button class='btn-warning' id='clear-cart'>Clear Cart</button> -->
 			<div>
-				<ul id="show-cart">
-					<!--  -->
-				</ul>
-
-				<div >Total Cart: Ksh <span id="total-cart"> 50</span></div>
-			</div> 
+				<h2>Cart</h2>
+				<table class="table table-striped table-hover table-light">
+					<tr class="table-primary">
+						<th>Item</th>
+						<th>Count</th>
+						<th>Price</th>
+						<th>Totalprice</th>
+						<th>Increase Items</th>
+						<th>Decrease Items</th>
+						<th>Delete Item</th>
+					</tr>
+					<tbody id="show-cart">
+						<!--  -->
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 		<footer class="container-fluid">
